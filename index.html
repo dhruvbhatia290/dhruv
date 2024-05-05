@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpooling Website</title>
+<link href="style.css">  
+
+    
+</head>
+<body>
+    <header>
+        <h1>Carpooling</h1>
+    </header>
+
+    <main>
+        <section id="offer-ride">
+            <h2>Offer a Ride</h2>
+            <!-- Form to offer a ride -->
+            <form id="ride-form">
+                <!-- Input fields for ride details -->
+                <input type="text" id="origin" placeholder="Origin">
+                <input type="text" id="destination" placeholder="Destination">
+                <input type="datetime-local" id="departure-time">
+                <input type="number" id="seats-available" placeholder="Seats Available">
+                <button type="submit">Offer Ride</button>
+            </form>
+        </section>
+
+        <section id="find-ride">
+            <h2>Find a Ride</h2>
+            <!-- Form to find a ride -->
+            <form id="find-ride-form">
+                <!-- Input fields for ride search -->
+                <input type="text" id="search-origin" placeholder="Origin">
+                <input type="text" id="search-destination" placeholder="Destination">
+                <input type="datetime-local" id="search-departure-time">
+                <button type="submit">Find Ride</button>
+            </form>
+            <!-- Display search results here -->
+            <div id="search-results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Carpooling</p>
+    </footer>
+    <div class="container">
+        <h1>Phone Number Sharing App</h1>
+        <form id="numberForm">
+            <label for="phoneNumber">Enter your phone number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="displayNumber"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
